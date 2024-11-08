@@ -1,0 +1,8 @@
+{% extends 'quiz/base.html' %}
+{% block content %}
+<form method="post">
+    {% csrf_token %}
+    <input type="file">
+    <button type="submit">Sumbit</button>
+</form>
+{% endblock %}
